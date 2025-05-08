@@ -24,12 +24,94 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <div class="wrapper">
+      <figure class="logo heder-left">
+        <a href="/" title="Home" target="_self" class="" >
+          <img src="./assets/images/logo.png" alt="Logo" class="logo-img">
+        </a>
+      </figure>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="/" title="Home" target="_self" class="">Home</a></li>
+          <li><a href="#FIXME" title="About" target="_self" class="">About</a></li>
+          <li><a href="#FIXME" title="Resume" target="_self" class="">Resume</a></li>
+          <li><a href="#FIXME" title="Portfolio" target="_self" class="">Portfolio</a></li>
+          <li><a href="#FIXME" title="Contact" target="_self" class="">Contact</a></li>
+        </ul> 
+      </nav>
+      <div class="header-right">
+        <a href="tel:+19712341508" title="Phone Number" target="_blank"  rel="noopener noreferrer">+1 971 234 1508</a>
+      </div>
+    </div>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
-
+      <section class="banner">
+        <div class="wrapper">
+          <figure style="background-color: black; height: 500px;">
+            <canvas id="myCanvas" width="1839" height="710" style="position: absolute; inset: 0px; z-index: 1;"></canvas>
+          </figure>
+          <div class="banner-content">
+            <div class="banner-left">
+              <span>hello i'm</span>
+              <h2>tejal pagar</h2>
+              <p>software developer</p>
+              <div class="button">
+                <a href="#FIXME" target="_self" title="Hire Me">hire me</a>
+              </div>
+            </div> 
+            <div class="banner-right">
+            <figure>
+              <img src="./assets/images/person-img.jpg" alt="Tejal Pagar" class="person-img">
+            </figure>
+            <ul class="social-media-icons">
+              <li><a href="#FIXME" title="LinkedIN" target="_blank"  rel="noopener noreferrer">LinkedIN</a></li>
+              <li><a href="#FIXME" title="Twitter" target="_blank"  rel="noopener noreferrer">Twitter</a></li>
+              <li><a href="#FIXME" title="Instagram" target="_blank"  rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </div> 
+          </div> 
+       </div>
+      </section>
+      <section class="about">
+        <div class="wrappper">
+          <h3 class="">about me</h3>
+          <div class="about-content">
+              <figure class="about-content-left">
+                <img src="./assets/images/person-img.jpg" alt="Tejal Pagar" class="person-img">
+              </figure>
+              <div class="about-content-right">
+                <h4>hi, i'm tejal pagar</h4>
+                <span>web developer</span>
+                <p>I'm a software developer with a passion for creating innovative solutions. I have experience in various programming languages and frameworks, and I'm always eager to learn new technologies.</p>
+                <ul class="info-list">
+                  <li><span class="info-span-left">Email</span> <span class="info-span-right">sample@gmail.com</span></li>
+                  <li><span class="info-span-left">Email</span> <span class="info-span-right">sample@gmail.com</span></li>
+                  <li><span class="info-span-left">Email</span> <span class="info-span-right">sample@gmail.com</span></li>
+                </ul>
+                <div class="button">
+                  <a href="#FIXME" target="_self" title="Download CV">download cv</a>
+                </div>
+          </div>
+        </div>
+      </section>
+    <section class="key-skills">
+      <div class="wrapper">
+        <h3 class="">key skills</h3>
+        <div class="key-skills-content">
+          <div class="key-skills-left">
+            <ul class="key-skill-list">
+              <li class="key-skill">
+                <span>icon</span>
+                <span class="skills-span-left">HTML</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, excepturi architecto! Laborum, itaque, ratione assumenda velit nihil cupiditate voluptatem saepe harum quia ullam sit dicta odit facere deleniti cum inventore?</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     </main>
     <!--main section end-->
 
@@ -41,6 +123,16 @@
 
   </div>
   <!--container end-->
-  <script src="assets/js/script.js"></script>
+  <script>
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  const img = new Image();
+  img.src = 'assets/images/download2.png'; 
+
+  img.onload = function() {
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  };
+</script>
 </body>
 </html>
