@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tejal Pagar Portfolio</title>
+    <!-- View-port Basics: http://mzl.la/VYREaP -->
+    <!-- This meta tag is used for mobile device to display the page without any zooming,
+       so how much the device is able to fit on the screen is what's shown initially. 
+       Remove comments from this tag, when you want to apply media queries to the website. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!--font-awesome link for icons-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/vendor/font-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg-[#0a101e] text-[#fff]">
+    <!--container start-->
+    <div class="container">
+      <!--header section start-->
+      <header class="bg-[#0a101e] w-full absolute top-0 left-0 z-10">
+        <div class="wrapper mx-auto flex justify-between">
+          <figure class="logo heder-left">
+            <a href="/" title="Home" target="_self" class="">
+              <img src="./assets/images/logo.png" alt="Logo" class="logo-img" />
+            </a>
+          </figure>
+          <nav>
+            <ul class="nav-list flex gap-6">
+              <li>
+                <a href="/" title="Home" target="_self" class="uppercase text-[#fff] p-2.5"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#FIXME" title="About" target="_self" class="uppercase text-[#fff] p-2.5"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#FIXME" title="Resume" target="_self" class="uppercase text-[#fff] p-2.5"
+                  >Resume</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#FIXME"
+                  title="Portfolio"
+                  target="_self"
+                  class="uppercase text-[#fff] p-2.5"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#FIXME" title="Contact" target="_self" class="uppercase text-[#fff] p-2.5"
+                  >Contact</a
+                >
+              </li>
+              <li class="phone-number relative flex items-center pl-7">
+                <img
+                  src="./assets/icons/phone.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+                <a
+                  href="tel:+19712341508"
+                  title="Phone Number"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-[#fec544]"
+                  >+1 971 234 1508</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!--header section start-->
+      <!--main section start-->
+      <main>
+        <section class="banner">
+          <div class="wrapper">
+            <figure
+              style="background-color: black;"
+              class="banner-img"
+            >
+              <canvas
+                id="myCanvas"
+                width="1839"
+                height="710"
+                style="position: absolute; inset: 0px; z-index: 1"
+              ></canvas>
+            </figure>
+            <!-- <div class="banner-content"> -->
+            <div class="banner-left">
+              <span class="capitalize">hello i'm</span>
+              <h2 class="uppercase text-xl">tejal pagar</h2>
+              <p class="capitalize">software developer</p>
+              <div class="button">
+                <a
+                  href="#FIXME"
+                  target="_self"
+                  title="Hire Me"
+                  class="capitalize"
+                  >hire me</a
+                >
+              </div>
+            </div>
+            <div class="banner-right">
+              <figure class="banner-figure">
+                <img
+                  src="./assets/images/person-img.jpg"
+                  alt="Tejal Pagar"
+                  class="person-img"
+                />
+              </figure>
+              <ul class="social-media-icons">
+                <li class="social-media-icons-items" style="width: auto">
+                  <img
+                    src="./assets/icons/linkedin.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                  <a
+                    href="#FIXME"
+                    title="LinkedIN"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIN</a
+                  >
+                </li>
+                <li class="social-media-icons-items">
+                  <img
+                    src="./assets/icons/twitter.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                  <a
+                    href="#FIXME"
+                    title="Twitter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="social-media-icons-items">
+                  <img
+                    src="./assets/icons/instagram.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                  <a
+                    href="#FIXME"
+                    title="Instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- </div> -->
+          </div>
+        </section>
+        <section class="about">
+        <div class="wrapper">
+          <h3 class="all-caps">about me</h3>
+          <div class="about-content">
+              <figure class="about-content-left" style="flex-basis: 48%;">
+                <img src="./assets/images/about-page-person-img.jpg" alt="Tejal Pagar" class="">
+              </figure>
+              <div class="about-content-right"  style="flex-basis: 48%;">
+                <h4 class="capitalize">hi, i'm tejal pagar</h4>
+                <span class="capitalize yellow-span">web developer</span>
+                <p class="single-letter-caps">I'm a software developer with a passion for creating innovative solutions. I have experience in various programming languages and frameworks, and I'm always eager to learn new technologies.</p>
+                <ul class="info-list">
+                  <li class="info-list-item"><span class="info-span-left capitalize">Email</span> <span class="info-span-right">sample@gmail.com</span></li>
+                  <li class="info-list-item"><span class="info-span-left capitalize">Email</span> <span class="info-span-right">sample@gmail.com</span></li>
+                  <li class="info-list-item"><span class="info-span-left capitalize">Email</span> <span class="info-span-right">sample@gmail.com</span></li>
+                </ul>
+                <div class="button" style="margin-top: 25px;">
+                  <a href="#FIXME" target="_self" title="Download CV" class="capitalize">download cv</a>
+                </div>
+          </div>
+        </div>
+      </section>
+      <section class="key-skills">
+      <div class="wrapper">
+        <h3 class="all-caps">key skills</h3>
+        <div class="key-skills-content">
+          <div class="key-skills-left">
+            <ul class="key-skill-list">
+              <li class="key-skill">
+                <img
+                src="./assets/icons/coding.svg"
+                alt=""
+                width="49"
+                height="49"
+                class="key-sill-img"
+               />
+                <span class="skills-span-left">HTML</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, excepturi architecto! Laborum, itaque, ratione assumenda velit nihil cupiditate voluptatem saepe harum quia ullam sit dicta odit facere deleniti cum inventore?</p>
+              </li>
+              <li class="key-skill">
+                <span>icon</span>
+                <span class="skills-span-left">HTML</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, excepturi architecto! Laborum, itaque, ratione assumenda velit nihil cupiditate voluptatem saepe harum quia ullam sit dicta odit facere deleniti cum inventore?</p>
+              </li>
+              <li class="key-skill">
+                <span>icon</span>
+                <span class="skills-span-left">HTML</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, excepturi architecto! Laborum, itaque, ratione assumenda velit nihil cupiditate voluptatem saepe harum quia ullam sit dicta odit facere deleniti cum inventore?</p>
+              </li>
+              <li class="key-skill">
+                <span>icon</span>
+                <span class="skills-span-left">HTML</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, excepturi architecto! Laborum, itaque, ratione assumenda velit nihil cupiditate voluptatem saepe harum quia ullam sit dicta odit facere deleniti cum inventore?</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  <section class="skills">
+      <div class="wrappper">
+        <h3 class="">MY SKILLS</h3>
+        <div class="skills-content">
+            <div class="about-content-right">
+              <h4>hi, i'm tejal pagar</h4>
+              <p>I'm a software developer with a passion for creating innovative solutions. I have experience in various programming languages and frameworks, and I'm always eager to learn new technologies.</p>
+              <p>I'm a software developer with a passion for creating innovative solutions. I have experience in various programming languages and frameworks, and I'm always eager to learn new technologies.</p>
+            </div>
+            <ul class="skills-list">
+                <li class="skills-list-item">
+                  <div class="skill-name-percentage">
+                    <span class="skill-name">Next JS</span> 
+                    <span class="skill-percentage">99%</span> 
+                  </div>
+                  <div class="skill-range">
+                    <span class="range-up">range-up</span>
+                    <span class="range-down">range-down</span>
+                  </div>
+                </li>
+                <li><span class="info-span-left">Email</span> <span class="info-span-right">sample@gmail.com</span></li>
+                <li><span class="info-span-left">Email</span> <span class="info-span-right">sample@gmail.com</span></li>
+            </ul>
+      </div>
+    </section>
+    <section class="resume">
+      <div class="wrapper">
+        <h3 class="">Resume</h3>
+        <div class="resume-left">
+          <h4>Experience</h4>
+          <ul class="resume-content-list">
+            <li  class="resume-content-list-item">
+              <div class="timeline-dot"></div>
+              <div class="resume-content">
+                 <h5>Senior UX/UI Designer</h5>
+                 <span class="period">Jan 2020 - Present</span>
+                 <span class="organisation">Bergnaum, Hills and Howe</span>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic numquam optio culpa.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="wrapper">
+        <ul class="review-list">
+          <li class="review-list-item">
+            <p class="review-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, veritatis.</p>
+            <div class="person-info">
+            <figure class="person-img">
+              <img src="./assets/images/person-img.jpg" alt="Person">
+            </figure>
+            <h6 class="person-name">ABC XYZ</h6>
+            <span class="person-role">Designation</span>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-me">
+      <div class="wrapper">
+        <div class="contact-form">
+          <h4>Just say Hello</h4>
+          <form action="#FIXME">
+            <div class="name">
+              <input type="text" id="name" name="name" placeholder="Your Name">
+              <span class="name-span"></span>
+            </div>
+            <div class="email">
+              <input type="email" id="email" name="email" placeholder="Your Email">
+              <span class="email-span"></span>
+            </div>
+            <div class="subject">
+              <input type="text" id="subject" name="subject" placeholder="Your Subject">
+              <span class="subject-span"></span>
+            </div>
+            <div class="message">
+              <input type="textarea" id="subject" name="subject" placeholder="Your Message">
+              <span class="message-span"></span>
+            </div>
+            <div class="button">
+              <a href="#FIXME" target="_self" title="Send Message">Send Message</a>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h4>Contact Info</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, laudantium.</p>
+          <ul class="info-list">
+            <li>
+              <span class="icon">icon</span>
+              <div class="info-content">
+                <h6>Email</h6>
+                <span class="info">devis@example.com</span>
+                <span class="info">devis@example.com</span>
+              </div>
+            </li>
+          </ul>
+          <div class="social-media">
+          <span class="optional-para">Visite my social profile and get connected</span>
+          <ul class="social-media-icons">
+            <li><a href="#FIXME" title="LinkedIN" target="_blank"  rel="noopener noreferrer">LinkedIN</a></li>
+            <li><a href="#FIXME" title="Twitter" target="_blank"  rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="#FIXME" title="Instagram" target="_blank"  rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </section> -->
+      </main>
+      <!--main section end-->
+      <!--footer section start-->
+      <footer>
+        <div class="wrapper">
+          <span>© 2020. Designed by Laralink. All right reserved.</span>
+        </div>
+      </footer>
+      <!--footer section end-->
+    </div>
+    <!--container end-->
+    <script>
+      const canvas = document.getElementById('myCanvas');
+      const ctx = canvas.getContext('2d');
+
+      const img = new Image();
+      img.src = 'assets/images/download2.png';
+
+      img.onload = function () {
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      };
+    </script>
+  </body>
+</html>

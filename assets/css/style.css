@@ -1,0 +1,540 @@
+@charset "utf-8";
+@import 'tailwindcss';
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: ' ';
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  @apply max-w-7xl w-5/6 mx-auto;
+}
+
+section .wrapper {
+  @apply pt-24 px-0 pb-0;
+}
+
+.first-letter-caps {
+  text-transform: capitalize;
+}
+.single-letter-caps::first-letter {
+  @apply uppercase;
+}
+
+p {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+p {
+  @apply text-[#a9adb8];
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 65px;
+  @apply uppercase relative text-center text-[#fec544] font-bold mb-16;
+}
+
+h3::after {
+  content: '';
+  @apply bg-[#3f4551] absolute w-[170px] h-[2px] left-1/2 -translate-x-1/2 bottom-[-16px];
+}
+
+h3::before {
+  content: '';
+  @apply absolute bg-[#fec544] w-[70px] h-[2px] left-1/2 -translate-x-1/2 bottom-[-16px] z-[5];
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+header .wrapper {
+  padding: 20px;
+}
+
+nav a {
+  padding: 10px;
+}
+
+.phone-number::before {
+  content: '';
+  @apply absolute h-[11px] w-px bg-[#fff] left-0;
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 27px;
+}
+
+.phone-number img {
+  width: auto;
+}
+
+header figure {
+  width: 15%;
+}
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+/*=================================
+  banner styling starts here
+=================================*/
+.banner-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  height: 900px;
+  overflow: hidden;
+}
+
+.banner .wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10%;
+  padding: 0 0 0;
+}
+
+.banner-left,
+.banner-right {
+  flex-basis: 50%;
+  color: #fff;
+}
+
+.banner-left span {
+  font-size: 32px;
+  color: #fec544;
+}
+
+.banner-left p {
+  margin: 20px 0 38px;
+  color: grey;
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 100px;
+  font-weight: bolder;
+  line-height: 105px;
+  margin: 15px 0;
+}
+
+.button a {
+  background-color: #fec544;
+  color: #000;
+  padding: 13px 50px;
+  border-radius: 30px;
+}
+
+.banner-left {
+  color: #fff;
+  width: 45%;
+}
+
+.banner-right {
+  width: 46%;
+}
+
+.banner-left {
+  position: absolute;
+  bottom: 7%;
+  z-index: 5;
+  transform: translateY(-50%);
+  left: 6%;
+}
+
+.banner-right {
+  position: absolute;
+  top: 84px;
+  right: 0;
+  z-index: 5;
+}
+
+.person-img {
+  height: 816px;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-figure {
+  position: relative;
+}
+
+.social-media-icons {
+  position: absolute;
+  bottom: 4.2%;
+  transform: translateX(-50%);
+  left: -35.3%;
+}
+
+.social-media-icons {
+  transform: translateX(-160px);
+  width: auto;
+  display: flex;
+  gap: 18px;
+  background-color: #101624;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  padding: 15px;
+  border: 0.5px solid #3f4551;
+  border-right: none;
+  z-index: -1;
+}
+
+.social-media-icons-items {
+  width: 12%;
+  overflow: hidden;
+  display: flex;
+  border-radius: 42px;
+  border: 1px solid white;
+  background-color: #000;
+  padding: 12px 15px;
+  gap: 15px;
+  border: 0.5px solid #3f4551;
+}
+
+.social-media-icons-items a {
+  color: white;
+  font-weight: bolder;
+  line-height: 25px;
+}
+/*=================================
+  banner styling ends here
+=================================*/
+/*=================================
+  about styling starts here
+=================================*/
+.about .wrapper {
+  /* padding: 100px 0 0; */
+}
+
+.about-content {
+  display: flex;
+  gap: 5%;
+}
+
+/* h3::after {
+  content: '';
+  position: absolute;
+  background-color: #3f4551;
+  width: 170px;
+  height: 2px;
+  transform: translateX(-50%);
+  bottom: -16px;
+  left: 50%;
+}
+
+h3::before {
+  content: '';
+  position: absolute;
+  background-color: #fec544;
+  width: 70px;
+  height: 2px;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+  color: #fec544;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 65px;
+} */
+
+h4 {
+  font-size: 36px;
+}
+
+.yellow-span {
+  color: #fec544;
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  color: #a9adb8;
+}
+
+.info-list-item {
+  display: flex;
+}
+
+.info-list-item .info-span-left {
+  width: 16%;
+}
+
+.info-list-item .info-span-right::before {
+  content: ':';
+}
+
+.info-list-item .info-span-right {
+  content: ':';
+  display: flex;
+  gap: 10px;
+}
+
+.about-content-right {
+  flex-basis: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.key-skill-list {
+  display: flex;
+  gap: 3%;
+  flex-wrap: wrap;
+}
+
+.key-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+}
+
+.key-skill {
+  width: 25.82%;
+  border: 1px solid #232935;
+  background-color: #101624;
+  padding: 45px 30px;
+}
+.key-sill-img {
+  width: 23%;
+  border: 1px solid #3f4551;
+  border-radius: 98px;
+  padding: 15px 7px;
+}
+/*=================================
+  about styling ends here
+=================================*/
+/*=================================
+  main styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/
+footer {
+  background-color: #0a101e;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+}
