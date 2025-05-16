@@ -180,6 +180,14 @@ sub {
 }
 
 /*for all*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -196,8 +204,11 @@ li {
 }
 
 /*for wrapper*/
+.wrapper{
+  max-width: 1920px
+}
 .wrapper {
-  @apply max-w-7xl w-5/6 mx-auto;
+  @apply w-5/6 mx-auto;
 }
 
 section .wrapper {
@@ -276,19 +287,20 @@ header figure {
 /*=================================
   banner styling starts here
 =================================*/
-.banner-img {
+.banner{
   position: relative;
-  width: 100%;
-  height: auto;
-  height: 900px;
+}
+
+.banner-img{
+  width: 100%; 
   overflow: hidden;
 }
 
 .banner .wrapper {
-  width: 100%;
-  display: flex;
+   width: 100%;
+  /*display: flex;
   gap: 10%;
-  padding: 0 0 0;
+  padding: 0 0 0; */
 }
 
 .banner-left,
@@ -297,7 +309,7 @@ header figure {
   color: #fff;
 }
 
-.banner-left span {
+ .banner-left span {
   font-size: 32px;
   color: #fec544;
 }
@@ -330,7 +342,7 @@ h2 {
 .banner-right {
   width: 46%;
 }
-
+/* 
 .banner-left {
   position: absolute;
   bottom: 7%;
@@ -344,20 +356,13 @@ h2 {
   top: 84px;
   right: 0;
   z-index: 5;
-}
+} */
 
 .person-img {
-  height: 816px;
+  height: 778px;
   width: 100%;
 }
 
-.banner {
-  position: relative;
-}
-
-.banner-figure {
-  position: relative;
-}
 
 .social-media-icons {
   position: absolute;
@@ -397,6 +402,22 @@ h2 {
   font-weight: bolder;
   line-height: 25px;
 }
+
+.banner-content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: flex;
+  gap: 10%;
+  padding: 0 0 0;
+}
+
+
+.banner-content{
+  @apply w-5/6 ;
+}
 /*=================================
   banner styling ends here
 =================================*/
@@ -412,7 +433,7 @@ h2 {
   gap: 5%;
 }
 
-/* h3::after {
+h3::after {
   content: '';
   position: absolute;
   background-color: #3f4551;
@@ -442,9 +463,9 @@ h3 {
   font-weight: bold;
   font-size: 25px;
   margin-bottom: 65px;
-} */
+} 
 
-h4 {
+ h4 {
   font-size: 36px;
 }
 
@@ -537,4 +558,15 @@ footer {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+}
+
+/*media query for 995px starts here*/
+@media only screen and (min-width: 1281px) and (max-width: 1920px) {
+  .wrapper {
+    @apply w-4/6 mx-auto;
+  }
+
+  .banner-content{
+    @apply w-4/6 ;
+  }
 }

@@ -26,12 +26,12 @@
     />
     <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
     <link href="./src/output.css" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" media="screen" href="./assets/css/style.css" />
   </head>
 
   <body class="bg-[#0a101e] text-[#fff]">
     <!--container start-->
-    <div class="container">
+    <div class="container-box">
       <!--header section start-->
       <header class="bg-[#0a101e] w-full absolute top-0 left-0 z-10">
         <div class="wrapper mx-auto flex justify-between">
@@ -97,17 +97,16 @@
         <section class="banner">
           <div class="wrapper">
             <figure
-              style="background-color: black;"
+              style=""
               class="banner-img"
             >
-              <canvas
-                id="myCanvas"
-                width="1839"
-                height="710"
-                style="position: absolute; inset: 0px; z-index: 1"
-              ></canvas>
+              <img
+                src="./assets/images/banner-placeholder.svg"
+                alt="Banner Image"
+                class="banner-placeholder-img" style=" object-fit: cover;    width: 100%;
+             height: 100%;"/>
             </figure>
-            <!-- <div class="banner-content"> -->
+            <div class="banner-content w-4/6 xl:w-5/6">
             <div class="banner-left">
               <span class="capitalize">hello i'm</span>
               <h2 class="uppercase text-xl">tejal pagar</h2>
@@ -178,7 +177,7 @@
                 </li>
               </ul>
             </div>
-            <!-- </div> -->
+            </div>
           </div>
         </section>
         <section class="about">
@@ -361,7 +360,7 @@
       <!--footer section end-->
     </div>
     <!--container end-->
-    <script>
+    <!-- <script>
       const canvas = document.getElementById('myCanvas');
       const ctx = canvas.getContext('2d');
 
@@ -371,6 +370,6 @@
       img.onload = function () {
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
       };
-    </script>
+    </script> -->
   </body>
 </html>

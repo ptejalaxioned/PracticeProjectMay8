@@ -179,6 +179,14 @@ sub {
 }
 
 /*for all*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -279,16 +287,17 @@ header figure {
 /*=================================
   banner styling starts here
 =================================*/
+
 .banner-img {
-  position: relative;
-  width: 100%;
-  height: auto;
+  /* position: relative; */
+  /* width: auto;
+  height: 900px; */
 }
 
 .banner .wrapper {
   width: 100%;
-  display: flex;
-  gap: 10%;
+  /* display: flex;
+  gap: 10%; */
 }
 
 /* .banner-content {
@@ -301,7 +310,7 @@ header figure {
   left: 50%;
   z-index: 5;
 } */
-.banner-left,
+/* .banner-left,
 .banner-right {
   flex-basis: 50%;
   color: #fff;
@@ -405,7 +414,7 @@ h2 {
 .social-media-icons-items a {
   color: white;
   font-weight: bolder;
-}
+} */
 /*=================================
   banner styling ends here
 =================================*/
